@@ -48,7 +48,7 @@ class TurtleSimControllerNode(Node): # MODIFY NAME
     def control_loop(self):
         if self.pose_ == None or self.turtle_to_catch_ == None:
             return
-
+        
         dist_x = self.turtle_to_catch_.x - self.pose_.x
         dist_y = self.turtle_to_catch_.y - self.pose_.y
         distance = math.sqrt(dist_x *dist_x + dist_y*dist_y)

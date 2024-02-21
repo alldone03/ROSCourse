@@ -12,7 +12,7 @@ public:
         publisher_ = this->create_publisher<example_interfaces::msg::String>("robot_news", 10);
         timer_ = this->create_wall_timer(std::chrono::milliseconds(500),
                                          std::bind(&RobotNewsStationNode::publishNews, this));
-        RCLCPP_INFO(this->get_logger(), "Robot News Station has been started.");
+        RCLCPP_INFO(this->get_logger(), "Ro News Station has been started.");
     }
 
 private:
